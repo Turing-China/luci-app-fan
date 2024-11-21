@@ -10,13 +10,13 @@ LUCI_DEPENDS:=+coreutils-stat
 LUCI_PKGARCH:=all
 PKG_VERSION:=1.0.0-3
 PKG_RELEASE:=
-PKG_MAINTAINER:=jjm2473 <jjm2473@gmail.com>
+PKG_MAINTAINER:=Turing <turing@xusw.com>
 
 define Package/luci-app-fan/conffiles
 /etc/config/luci-fan
 endef
 
-include ../luci-alias.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 
